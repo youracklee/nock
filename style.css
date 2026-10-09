@@ -1,0 +1,41 @@
+/* Nock — support and privacy pages. One sheet for all three pages; no scripts, no fonts fetched. */
+:root {
+  --bg: #f6f4ef;
+  --text: #1d1b18;
+  --muted: #6b665d;
+  --rule: #ddd7cb;
+  --accent: #b8860b;
+  --card: #ffffff;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14130f;
+    --text: #ece8df;
+    --muted: #a39d90;
+    --rule: #34312a;
+    --accent: #e0b24a;
+    --card: #1d1b16;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Segoe UI", Roboto, sans-serif;
+}
+main { max-width: 720px; margin: 0 auto; padding: 48px 16px 72px; }
+header { margin-bottom: 40px; }
+.mark { font-weight: 900; letter-spacing: 0.3em; font-size: 15px; color: var(--accent); text-decoration: none; }
+h1 { font-size: 34px; line-height: 1.2; margin: 12px 0 4px; }
+h2 { font-size: 21px; margin: 36px 0 8px; }
+h3 { font-size: 17px; margin: 24px 0 4px; }
+p, li { color: var(--text); }
+.muted { color: var(--muted); font-size: 15px; }
+a { color: var(--accent); }
+ul { padding-left: 1.2em; }
+hr { border: 0; border-top: 1px solid var(--rule); margin: 56px 0; }
+.lang { font-size: 14px; color: var(--muted); }
+.card { background: var(--card); border: 1px solid var(--rule); border-radius: 14px; padding: 20px 22px; margin: 16px 0; }
+footer { margin-top: 56px; font-size: 14px; color: var(--muted); }
